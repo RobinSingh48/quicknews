@@ -29,6 +29,8 @@ class _MainScreenContainerState extends State<MainScreenContainer> {
         children: [
           Expanded(
             child: Container(
+              height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
                 child: Image.network(
               widget.newsImage,
               fit: BoxFit.cover,
